@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    compileSdk = 31
+    compileSdk = Configs.compileSdk
 
     defaultConfig {
         applicationId = Configs.applicationId
@@ -30,8 +30,13 @@ android {
         sourceCompatibility = Options.javaVersion
         targetCompatibility = Options.javaVersion
     }
+
     kotlinOptions {
         jvmTarget = Options.jvmTarget
+    }
+
+    buildFeatures {
+        viewBinding = true
     }
 }
 

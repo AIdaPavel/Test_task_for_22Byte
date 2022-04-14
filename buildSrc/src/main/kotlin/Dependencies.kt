@@ -7,6 +7,7 @@ object Plugins {
 }
 
 object Configs {
+    const val compileSdk = 31
     const val applicationId = "aidapavel.testtask"
     const val minSdk = 23
     const val targetSdk = 31
